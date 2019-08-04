@@ -1,0 +1,9 @@
+--- 
+applications:
+- name: sample-{your-initial}
+  instances: 1
+  path: .\target\sample-0.0.1-SNAPSHOT.jar
+  timeout: 180 # to give time for the data to import
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    SPRING_CLOUD_CONFIG_URI: https://config-server.{your-domain}

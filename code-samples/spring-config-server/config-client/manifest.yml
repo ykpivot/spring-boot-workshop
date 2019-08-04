@@ -1,0 +1,9 @@
+---
+applications:
+ - name: config-client
+   memory: 1G
+   instances: 1
+   path: target/config-client-0.0.1-SNAPSHOT.jar
+   env:
+    SPRING_PROFILES_ACTIVE: cloud
+    SPRING_CLOUD_CONFIG_URI: http://config-server.apps.20.41.62.88.cf.pcfazure.com
