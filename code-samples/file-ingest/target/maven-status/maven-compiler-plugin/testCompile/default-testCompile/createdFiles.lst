@@ -1,5 +1,0 @@
-io/spring/cloud/dataflow/batch/ingest/BatchApplicationTests.class
-io/spring/cloud/dataflow/batch/ingest/mapper/fieldset/PersonFieldSetMapperTests.class
-io/spring/cloud/dataflow/batch/ingest/TaskBatchTest.class
-io/spring/cloud/dataflow/batch/ingest/BatchApplicationTests$1.class
-io/spring/cloud/dataflow/batch/processor/PersonItemProcessorTests.class

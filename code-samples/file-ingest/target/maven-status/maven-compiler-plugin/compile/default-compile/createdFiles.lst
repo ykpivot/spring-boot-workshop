@@ -1,9 +1,0 @@
-META-INF/spring-configuration-metadata.json
-io/spring/cloud/dataflow/batch/ingest/Application.class
-io/spring/cloud/dataflow/batch/processor/PersonItemProcessor$Action.class
-io/spring/cloud/dataflow/batch/domain/Person.class
-io/spring/cloud/dataflow/batch/processor/PersonItemProcessor$1.class
-io/spring/cloud/dataflow/batch/ingest/mapper/fieldset/PersonFieldSetMapper.class
-io/spring/cloud/dataflow/batch/ingest/config/BatchProperty.class
-io/spring/cloud/dataflow/batch/processor/PersonItemProcessor.class
-io/spring/cloud/dataflow/batch/ingest/config/BatchConfiguration.class
