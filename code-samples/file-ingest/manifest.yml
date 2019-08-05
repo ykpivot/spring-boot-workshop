@@ -1,0 +1,9 @@
+---
+applications:
+- name: file-ingest
+  memory: 1G
+  random-route: true
+  path: target/ingest-1.0.0.BUILD-SNAPSHOT.jar
+  buildpacks:
+    - java_buildpack
+

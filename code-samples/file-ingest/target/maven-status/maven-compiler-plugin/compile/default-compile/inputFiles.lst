@@ -1,0 +1,6 @@
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/ingest/Application.java
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/processor/PersonItemProcessor.java
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/domain/Person.java
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/ingest/config/BatchConfiguration.java
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/ingest/mapper/fieldset/PersonFieldSetMapper.java
+/Users/arau/workshops/spring-boot-workshop/code-samples/file-ingest/src/main/java/io/spring/cloud/dataflow/batch/ingest/config/BatchProperty.java
