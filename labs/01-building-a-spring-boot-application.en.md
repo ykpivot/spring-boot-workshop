@@ -114,13 +114,13 @@ First
 we'll run tests
 
 ```bash
-mvnw test
+mvn test
 ```
 
 Next we'll package the application as an executable jar
 
 ```bash
-mvnw package
+mvn package
 ```
 
 ## Run the _sample_ application
@@ -136,7 +136,7 @@ or we can run it using maven.
 
 
 ```bash
-mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 You should see the application start up an

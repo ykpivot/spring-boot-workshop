@@ -147,7 +147,7 @@ spring.datasource.hikari.maximum-pool-size=5
 * Run the application
 
 ```bash
-mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 * Access the application using `curl` or your web browser using the newly added REST repository endpoint at http://localhost:8080/cities. You'll see that the primary endpoint automatically exposes the ability to page, size, and sort the response JSON.
 
@@ -188,7 +188,7 @@ Next we'll import some data.
 * Restart the application.
 
 ```bash
-mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 * Access the application again. Notice the appropriate hypermedia is included for *next*, *previous*, and *self*. You can also select pages and page size by utilizing `?size=n&page=n` on the URL string. Finally, you can sort the data utilizing `?sort=fieldName` (replace fieldName with a cities attribute).
@@ -295,7 +295,7 @@ Page<City> findByStateCode(@Param("stateCode") String stateCode, Pageable pageab
 * Run the application
 
 ```bash
-mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 * Access the application again. Notice that hypermedia for a new *search* endpoint has appeared.
@@ -383,7 +383,7 @@ Note that we now have new search endpoints for each of the finders that we added
 * Build the application
 
 ```
-mvnw package
+mvn package
 ```
 * You should already have an application manifest, **manifest.yml**, created in Lab 1; this can be reused.  You'll want to add a timeout param so that our service has enough time to initialize with its data loading:
 

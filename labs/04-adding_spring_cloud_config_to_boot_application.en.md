@@ -157,7 +157,7 @@ public class GreetingController {
 * Run the application.
 
 ```bash
-mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 When you access `http://localhost:8080/hello`, `Hello World` would be displayed.
@@ -175,7 +175,7 @@ cd c:\Users\{your-username}\workspace\spring-boot-workshop\code-samples\spring-c
 * Run the _Config Server_
 
 ```bash
-mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 ## Run the _sample_ Application and verify dynamic config is working
@@ -191,16 +191,57 @@ mvnw spring-boot:run
 * Run the application using the `local` profile.
 
 	```bash
-	mvnw clean spring-boot:run -Dspring.profiles.active=local
+	mvn clean spring-boot:run -Dspring.profiles.active=local
 	```
 
 * Browse to `http://localhost:8080/hello` and verify you now see your new greeting, "Hola World!".
 
 * Stop the _sample_ application
 
-## Associate the _Config Server_ on PCF
+## Deploy *Config Server* to Cloud Foundry
 
-Since Spring Cloud Service (SCS) is not yet installed on PCF, we are going to use a standalone Config Server that we manually deployed prior to this lab.
+Since Spring Cloud Service (SCS) is not installed on Cloud Foundry, we are going to manually deploy a standalone *Config Server* application to Cloud Foundry.
+
+* In the CMD session for *Config Server*, build the *Config Server* application and push into Cloud Foundry.
+
+```bash
+mvn clean package
+```
+. Push *Config Server* application into Cloud Foundry
+
+```bash
+cf push
+```
+
+You can verify *Config Server* is properly working by navigating to the following URL in your browser.
+
+```
+http://config-server.apps.20.41.62.88.cf.pcfazure.com/sample/cloud
+```
+
+You should see a response similar to the following.
+
+```json
+{
+  "name": "sample",
+  "profiles": [
+    "cloud"
+  ],
+  "label": null,
+  "version": null,
+  "state": null,
+  "propertySources": [
+    {
+      "name": "classpath:/sample-cloud.yml",
+      "source": {
+        "greeting": "Cloudy"
+      }
+    }
+  ]
+}
+```
+
+## Associate the *Config Server* on Cloud Foundry
 
 * We will now associate our application to the config-server in the `manifest.yml` file. Add these entries to the bottom of **sample/manifest.yml**
 
@@ -225,12 +266,13 @@ applications:
 
 Two environments variables, `SPRING_PROFILES_ACTIVE` and `SPRING_CLOUD_CONFIG_URI` will get injected into the container in which the application will run. When the application starts, they will be loaded and be used to set active profile as well as URI to the config server.
 
+
 ## Deploy and test application
 
-* Build the application
+* In the CMD session for *sample* app, build the application
 
 ```bash
-mvnw clean package
+mvn clean package
 ```
 . Push application into Cloud Foundry
 

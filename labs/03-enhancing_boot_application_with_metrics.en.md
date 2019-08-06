@@ -23,7 +23,7 @@ management.endpoints.web.exposure.include=*
 * Run the updated application
 
 ```bash
-mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 * Try out the following endpoints with your browser. The output is omitted here because it can be quite large:
@@ -119,7 +119,7 @@ management.endpoint.health.show-details=always
 * Run the cloud-native-spring application:
 
 ```bash
-mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
 * Use httpie to verify the output of the health endpoint
@@ -187,7 +187,7 @@ This demo health indicator will randomize the health check.
 * Build and run the _sample_ application:
 
 ```bash
-$ mvnw clean spring-boot:run
+$ mvn clean spring-boot:run
 ```
 
 * Browse to `http://localhost:8080/actuator/health` and verify that the output is similar to the following (and changes randomly!).
@@ -300,7 +300,7 @@ management.cloudfoundry.skip-ssl-validation=true
 * Push application into Cloud Foundry
 
 ```bash
-  mvnw package
+  mvn package
   cf push
 ```
 
