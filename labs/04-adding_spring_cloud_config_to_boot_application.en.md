@@ -184,15 +184,15 @@ mvn spring-boot:run
 
 * Specify the name of our application in the `bootstrap.properties` file.
 
-        ```bash
-        spring.application.name=sample
-        ```
+```bash
+spring.application.name=sample
+```
 
 * Run the application using the `local` profile.
 
-	```bash
-	mvn clean spring-boot:run -Dspring.profiles.active=local
-	```
+```bash
+mvn clean spring-boot:run -Dspring.profiles.active=local
+```
 
 * Browse to `http://localhost:8080/hello` and verify you now see your new greeting, "Hola World!".
 
@@ -207,7 +207,7 @@ Since Spring Cloud Service (SCS) is not installed on Cloud Foundry, we are going
 ```bash
 mvn clean package
 ```
-. Push *Config Server* application into Cloud Foundry
+* Push *Config Server* application into Cloud Foundry
 
 ```bash
 cf push
@@ -250,7 +250,7 @@ You should see a response similar to the following.
     SPRING_PROFILES_ACTIVE: cloud
     SPRING_CLOUD_CONFIG_URI: https://config-server.{your-domain}
 ```
-Complete:
+Completed:
 
 ```yaml
 --- 
