@@ -169,7 +169,7 @@ When you access `http://localhost:8080/hello`, `Hello World` would be displayed.
 * Open a new Terminal session and nagivate to an example Config Server included in the Labs git repo.
 
 ```bash
-cd c:\Users\{your-username}\workspace\spring-boot-workshop\code-samples\spring-config-server\config-server
+cd c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop\code-samples\spring-config-server\config-server
 ```
 
 * Run the _Config Server_

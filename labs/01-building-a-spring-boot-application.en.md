@@ -5,23 +5,28 @@ a standard greeting.
 
 ## Getting started
 
-Open a Terminal (e.g., *cmd* or *powershell*). Create a working directory, if you don't have one. Change the working directory to the **workspace** folder.
+* Navigate to the folllowing git repo on *Github.com*.
 
-```bash
-cd c:\Users\{your-username}
-mkdir workspace
-cd workspace
+```
+https://github.com/ykpivot/spring-boot-workshop.git
 ```
 
-Clone a git repo that contains Labs instruction and sample code into the **workspace** folder.
+* Download the repo as a ZIP file by clicking on **Clone or download** then **Download ZIP**.
+
+![Github](github.png)
+
+* Unzip it into `c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop`. Make sure the contents of the git repo is directly placed in the *spring-boot-workshop* folder.
+
+* Open a Terminal (e.g., *cmd* or *powershell*). First, type in `c` to first go to the `C` drive, then navigate to the **spring-boot-workshop** folder.
 
 ```bash
-git clone https://github.com/ykpivot/spring-boot-workshop.git
+c
+cd c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop
 ```
 
+## Bootstrap your application using Spring Initializr
 
-Now, visit
-https://start.spring.io to create a new Spring Boot project with the following values:
+Now, visit `https://start.spring.io` to create a new Spring Boot project with the following values:
 
 ```
 Project: Maven
@@ -32,9 +37,9 @@ Artifact: sample
 Dependencies: Spring Web Starter 
 ```
 
-When you click on the *Generate the project ...* button on the bottom, it will create and download a zip file named *sample.zip*. Unzip the file and extract the contents into a folder named `sample` inside `c:\Users\{your-username}\workspace\spring-boot-workshop` folder.
+When you click on the *Generate the project ...* button on the bottom, it will create and download a zip file named *sample.zip*. Unzip the file and extract the contents into a folder named `sample` inside the `c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop` folder.
 
-Return to the Terminal session you opened previously and change the working directory to be `c:\Users\{your-username}\workspace\spring-boot-workshop`.
+Return to the Terminal session you opened previously and change the working directory to be `c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop`.
 
 ```bash
 cd spring-boot-workshop
@@ -45,7 +50,7 @@ You should see the **sample** folder, when you run one of the following commands
 
 Open this project in your editor/IDE of choice.
 
-***STS/Eclipse Import with Maven Help***
+***Eclipse Import with Maven Help***
 
 * Select *File > Import*
 
