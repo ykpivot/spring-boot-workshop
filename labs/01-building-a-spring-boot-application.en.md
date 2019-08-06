@@ -17,10 +17,10 @@ https://github.com/ykpivot/spring-boot-workshop.git
 
 * Unzip it into `c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop`. Make sure the contents of the git repo is directly placed in the *spring-boot-workshop* folder.
 
-* Open a Terminal (e.g., *cmd* or *powershell*). First, type in `c` to first go to the `C` drive, then navigate to the **spring-boot-workshop** folder.
+* Open a Terminal (e.g., *cmd* or *powershell*). First, type in `c:` to first go to the `C` drive, then navigate to the **spring-boot-workshop** folder.
 
 ```bash
-c
+c:
 cd c:\Users\{your-username}\Downloads\spring\projects\spring-boot-workshop
 ```
 
